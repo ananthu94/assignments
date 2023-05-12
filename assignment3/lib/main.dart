@@ -23,7 +23,7 @@ class Assignment3 extends StatelessWidget {
         title: Text('Contacts'),
       ),
       body: ListView(
-        children: const [
+        children: [
           Card(
             child: ListTile(
               title: Text('Ajmi'),
@@ -31,69 +31,132 @@ class Assignment3 extends StatelessWidget {
               leading: CircleAvatar(
                 backgroundImage: AssetImage('assets/images/2.jpg'),
               ),
-              trailing: Icon(Icons.phone),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.phone),
+                  SizedBox(width: 25),
+                  Icon(Icons.message),
+                  SizedBox(width: 25),
+                  Icon(Icons.arrow_forward_ios),
+                ],
+              ),
             ),
           ),
           Card(
             child: ListTile(
-              title: Text('Ajmi'),
-              subtitle: Text('9567000111'),
+              title: Text('Arun'),
+              subtitle: Text('9561234562'),
               leading: CircleAvatar(
                 backgroundImage: AssetImage('assets/images/3.jpg'),
               ),
-              trailing: Icon(Icons.phone),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.phone),
+                  SizedBox(width: 25),
+                  Icon(Icons.message),
+                  SizedBox(width: 25),
+                  Icon(Icons.arrow_forward_ios),
+                ],
+              ),
             ),
           ),
           Card(
             child: ListTile(
-              title: Text('Ajmi'),
-              subtitle: Text('9567000111'),
+              title: Text('Manu'),
+              subtitle: Text('956123888'),
               leading: CircleAvatar(
                 backgroundImage: AssetImage('assets/images/4.jpg'),
               ),
-              trailing: Icon(Icons.phone),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.phone),
+                  SizedBox(width: 25),
+                  Icon(Icons.message),
+                  SizedBox(width: 25),
+                  Icon(Icons.arrow_forward_ios),
+                ],
+              ),
             ),
           ),
           Card(
             child: ListTile(
-              title: Text('Ajmi'),
-              subtitle: Text('9567000111'),
+              title: Text('Sam'),
+              subtitle: Text('9589578111'),
               leading: CircleAvatar(
                 backgroundImage: AssetImage('assets/images/3.jpg'),
               ),
-              trailing: Icon(Icons.phone),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.phone),
+                  SizedBox(width: 25),
+                  Icon(Icons.message),
+                  SizedBox(width: 25),
+                  Icon(Icons.arrow_forward_ios),
+                ],
+              ),
             ),
           ),
           Card(
             child: ListTile(
-              title: Text('Ajmi'),
-              subtitle: Text('9567000111'),
+              title: Text('Anu'),
+              subtitle: Text('8961234562'),
               leading: CircleAvatar(
                 backgroundImage: AssetImage('assets/images/4.jpg'),
               ),
-              trailing: Icon(Icons.phone),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.phone),
+                  SizedBox(width: 25),
+                  Icon(Icons.message),
+                  SizedBox(width: 25),
+                  Icon(Icons.arrow_forward_ios),
+                ],
+              ),
             ),
           ),
           Card(
             child: ListTile(
-              title: Text('Ajmi'),
-              subtitle: Text('9567000111'),
+              title: Text('Gopika'),
+              subtitle: Text('9561895761'),
               leading: CircleAvatar(
                 backgroundImage: AssetImage('assets/images/2.jpg'),
               ),
-              trailing: Icon(Icons.phone),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.phone),
+                  SizedBox(width: 25),
+                  Icon(Icons.message),
+                  SizedBox(width: 25),
+                  Icon(Icons.arrow_forward_ios),
+                ],
+              ),
             ),
           ),
           Card(
-            child: ListTile(
-              title: Text('Ajmi'),
-              subtitle: Text('9567000111'),
-              leading: CircleAvatar(
-                backgroundImage: AssetImage('assets/images/3.jpg'),
-              ),
-              trailing: Icon(Icons.phone),
+              child: ListTile(
+            title: Text('Vinu'),
+            subtitle: Text('8926670001'),
+            leading: CircleAvatar(
+              backgroundImage: AssetImage('assets/images/3.jpg'),
             ),
-          )
+            trailing: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.phone),
+                SizedBox(width: 25),
+                Icon(Icons.message),
+                SizedBox(width: 25),
+                Icon(Icons.arrow_forward_ios),
+              ],
+            ),
+          )),
+          // )
         ],
       ),
     ));
