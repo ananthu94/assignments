@@ -8,24 +8,24 @@ void main() {
       enabled: !kReleaseMode,
       builder: (context) => MaterialApp(
           useInheritedMediaQuery: true,
-          home: Whatsappui_chats()), // Wrap your app
+          home: Whatsappui_calls()), // Wrap your app
     ),
   );
 }
 
-class Whatsappui_chats extends StatelessWidget {
+class Whatsappui_calls extends StatelessWidget {
   var names = [
-    'Programmer',
-    'Hacker',
-    'Cera',
-    'Dona',
-    'Elvin',
-    'Anu',
-    'Beena',
+    'MOM',
+    'BRO',
+    'Anwer',
     'Sam',
+    'WIFE',
+    'RAHUL',
+    'ANU',
+    'DAD',
+    'SARA',
     'Bro',
     'Rahul',
-    'Anwer'
   ];
 
   var photo = [
@@ -42,32 +42,76 @@ class Whatsappui_chats extends StatelessWidget {
     'assets/icons/grapes.png'
   ];
 
-  var message = [
-    'Hi,its programmer,its been a while we met. Are you free on tuesday.',
-    'Hello there.',
-    'How are you ?',
-    'Are you free !',
-    'Hi',
-    'Meet me @ 3:30',
-    'Hello',
-    'Metting @ 09:30',
-    'Call me when you are free.Urgent!! ',
-    'HELLO',
-    'Attached the file',
+  var icons = [
+    Icon(
+      Icons.arrow_outward,
+      size: 18,
+      color: Colors.green,
+    ),
+    Icon(
+      Icons.arrow_outward,
+      size: 18,
+      color: Colors.green,
+    ),
+    Icon(
+      Icons.arrow_downward,
+      size: 18,
+      color: Colors.red,
+    ),
+    Icon(
+      Icons.arrow_downward,
+      size: 18,
+      color: Colors.red,
+    ),
+    Icon(
+      Icons.arrow_outward,
+      size: 18,
+      color: Colors.green,
+    ),
+    Icon(
+      Icons.arrow_outward,
+      size: 18,
+      color: Colors.green,
+    ),
+    Icon(
+      Icons.arrow_downward,
+      size: 18,
+      color: Colors.red,
+    ),
+    Icon(
+      Icons.arrow_outward,
+      size: 18,
+      color: Colors.green,
+    ),
+    Icon(
+      Icons.arrow_outward,
+      size: 18,
+      color: Colors.green,
+    ),
+    Icon(
+      Icons.arrow_downward,
+      size: 18,
+      color: Colors.red,
+    ),
+    Icon(
+      Icons.arrow_downward,
+      size: 18,
+      color: Colors.red,
+    ),
   ];
 
   var time = [
-    '12:25',
-    '11:56',
-    '09:56',
-    '01:43',
-    'Yesterday',
-    'Yesterday',
-    'Yesterday',
-    '5/3/23',
-    '4/3/23',
-    '4/3/23',
-    '4/3/23'
+    'Today, 12:25',
+    'Yesterday, 11:56',
+    'May3, 09:56',
+    'May2, 13:43',
+    'March 10, 09:43',
+    'March 8, 11:43',
+    'April 2, 16:43',
+    'April 1, 13:25',
+    '4/3/23, 12:32',
+    '4/3/23, 14:23',
+    '4/3/23, 17:40'
   ];
 
   @override
@@ -77,7 +121,7 @@ class Whatsappui_chats extends StatelessWidget {
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           backgroundColor: Colors.green,
-          child: const Icon(Icons.message),
+          child: const Icon(Icons.phone_forwarded),
         ),
         appBar: AppBar(
           toolbarHeight: 100,
@@ -105,9 +149,17 @@ class Whatsappui_chats extends StatelessWidget {
           itemBuilder: (context, index) {
             return ListTile(
               title: Text(names[index]),
-              subtitle: Text(message[index]),
+              subtitle: Row(
+                children: [
+                  icons[index],
+                  Text(time[index]),
+                ],
+              ),
               leading: Image.asset(photo[index]),
-              trailing: Text(time[index]),
+              trailing: Icon(
+                Icons.phone,
+                color: Colors.green,
+              ),
             );
           },
           itemCount: names.length,
