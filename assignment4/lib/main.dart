@@ -25,13 +25,15 @@ class Whatsappui_chats extends StatelessWidget {
     'Sam',
     'Bro',
     'Rahul',
-    'Anwer'
+    'Anwer',
+    'Anish',
   ];
 
   var photo = [
     'assets/icons/grapes.png',
     'assets/icons/babydog.png',
     'assets/icons/donut.png',
+    'assets/icons/duckicon.png',
     'assets/icons/easter.png',
     'assets/icons/grapes.png',
     'assets/icons/babydog.png',
@@ -53,6 +55,7 @@ class Whatsappui_chats extends StatelessWidget {
     'Metting @ 09:30',
     'Call me when you are free.Urgent!! ',
     'HELLO',
+    'Urgent Text!',
     'Attached the file',
   ];
 
@@ -67,7 +70,8 @@ class Whatsappui_chats extends StatelessWidget {
     '5/3/23',
     '4/3/23',
     '4/3/23',
-    '4/3/23'
+    '4/3/23',
+    '2/2/23'
   ];
 
   @override
