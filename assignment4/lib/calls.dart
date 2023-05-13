@@ -26,6 +26,7 @@ class Whatsappui_calls extends StatelessWidget {
     'SARA',
     'Bro',
     'Rahul',
+    'Subin'
   ];
 
   var photo = [
@@ -39,10 +40,11 @@ class Whatsappui_calls extends StatelessWidget {
     'assets/icons/duckicon.png',
     'assets/icons/logingirl.png',
     'assets/icons/babydog.png',
-    'assets/icons/grapes.png'
+    'assets/icons/donut.png',
+    'assets/icons/grapes.png',
   ];
 
-  var icons = [
+  var arrowicons = [
     Icon(
       Icons.arrow_outward,
       size: 18,
@@ -61,22 +63,7 @@ class Whatsappui_calls extends StatelessWidget {
     Icon(
       Icons.arrow_downward,
       size: 18,
-      color: Colors.red,
-    ),
-    Icon(
-      Icons.arrow_outward,
-      size: 18,
       color: Colors.green,
-    ),
-    Icon(
-      Icons.arrow_outward,
-      size: 18,
-      color: Colors.green,
-    ),
-    Icon(
-      Icons.arrow_downward,
-      size: 18,
-      color: Colors.red,
     ),
     Icon(
       Icons.arrow_outward,
@@ -94,9 +81,29 @@ class Whatsappui_calls extends StatelessWidget {
       color: Colors.red,
     ),
     Icon(
+      Icons.arrow_outward,
+      size: 18,
+      color: Colors.green,
+    ),
+    Icon(
+      Icons.arrow_outward,
+      size: 18,
+      color: Colors.green,
+    ),
+    Icon(
+      Icons.arrow_downward,
+      size: 18,
+      color: Colors.green,
+    ),
+    Icon(
       Icons.arrow_downward,
       size: 18,
       color: Colors.red,
+    ),
+    Icon(
+      Icons.arrow_outward,
+      size: 18,
+      color: Colors.green,
     ),
   ];
 
@@ -111,7 +118,23 @@ class Whatsappui_calls extends StatelessWidget {
     'April 1, 13:25',
     '4/3/23, 12:32',
     '4/3/23, 14:23',
-    '4/3/23, 17:40'
+    '4/3/23, 17:40',
+    '2/2/23, 10:10'
+  ];
+
+  var callicons = [
+    Icon(Icons.phone, color: Colors.green),
+    Icon(Icons.videocam, color: Colors.green),
+    Icon(Icons.videocam, color: Colors.green),
+    Icon(Icons.phone, color: Colors.green),
+    Icon(Icons.videocam, color: Colors.green),
+    Icon(Icons.phone, color: Colors.green),
+    Icon(Icons.phone, color: Colors.green),
+    Icon(Icons.phone, color: Colors.green),
+    Icon(Icons.videocam, color: Colors.green),
+    Icon(Icons.phone, color: Colors.green),
+    Icon(Icons.videocam, color: Colors.green),
+    Icon(Icons.phone, color: Colors.green),
   ];
 
   @override
@@ -148,19 +171,15 @@ class Whatsappui_calls extends StatelessWidget {
           shrinkWrap: true,
           itemBuilder: (context, index) {
             return ListTile(
-              title: Text(names[index]),
-              subtitle: Row(
-                children: [
-                  icons[index],
-                  Text(time[index]),
-                ],
-              ),
-              leading: Image.asset(photo[index]),
-              trailing: Icon(
-                Icons.phone,
-                color: Colors.green,
-              ),
-            );
+                title: Text(names[index]),
+                subtitle: Row(
+                  children: [
+                    arrowicons[index],
+                    Text(time[index]),
+                  ],
+                ),
+                leading: Image.asset(photo[index]),
+                trailing: callicons[index]);
           },
           itemCount: names.length,
         ),
