@@ -49,7 +49,7 @@ class Whatsappui_chats extends StatelessWidget {
     'Hello there.',
     'How are you ?',
     'Are you free !',
-    'Hi',
+    "Sir,I'm Elvin, happy to be part of your team. Will try to full fill my needs regarding the company.",
     'Meet me @ 3:30',
     'Hello',
     'Metting @ 09:30',
