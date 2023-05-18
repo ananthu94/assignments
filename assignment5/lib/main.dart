@@ -51,7 +51,10 @@ class Grid_assignment extends StatelessWidget {
         padding: const EdgeInsets.only(left: 10, right: 10),
         child: GridView(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2, mainAxisSpacing: 30, crossAxisSpacing: 30),
+              childAspectRatio: 2.5,
+              crossAxisCount: 2,
+              mainAxisSpacing: 30,
+              crossAxisSpacing: 30),
           children: List.generate(
             12,
             (index) => Container(
@@ -71,7 +74,10 @@ class Grid_assignment extends StatelessWidget {
                   'Shaker',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                 ),
-                leading: Icon(icons[index]),
+                leading: Icon(
+                  icons[index],
+                  size: 50,
+                ),
               ),
             ),
           ),

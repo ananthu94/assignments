@@ -56,12 +56,12 @@ class Whatsappui_calls extends StatelessWidget {
       color: Colors.green,
     ),
     Icon(
-      Icons.arrow_downward,
+      Icons.south_west_outlined,
       size: 18,
       color: Colors.red,
     ),
     Icon(
-      Icons.arrow_downward,
+      Icons.south_west_outlined,
       size: 18,
       color: Colors.green,
     ),
@@ -76,12 +76,12 @@ class Whatsappui_calls extends StatelessWidget {
       color: Colors.green,
     ),
     Icon(
-      Icons.arrow_downward,
+      Icons.south_west_outlined,
       size: 18,
       color: Colors.red,
     ),
     Icon(
-      Icons.arrow_outward,
+      Icons.south_west_outlined,
       size: 18,
       color: Colors.green,
     ),
@@ -91,12 +91,12 @@ class Whatsappui_calls extends StatelessWidget {
       color: Colors.green,
     ),
     Icon(
-      Icons.arrow_downward,
+      Icons.south_west_outlined,
       size: 18,
       color: Colors.green,
     ),
     Icon(
-      Icons.arrow_downward,
+      Icons.south_west_outlined,
       size: 18,
       color: Colors.red,
     ),
