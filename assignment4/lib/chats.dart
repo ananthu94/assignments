@@ -80,12 +80,12 @@ class Whatsappui_chats extends StatelessWidget {
       child: Scaffold(
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.teal,
           child: const Icon(Icons.message),
         ),
         appBar: AppBar(
           toolbarHeight: 100,
-          backgroundColor: Color.fromARGB(201, 10, 132, 79),
+          backgroundColor: Colors.teal,
           title: const Text(
             'WhatsApp',
           ),

@@ -123,18 +123,18 @@ class Whatsappui_calls extends StatelessWidget {
   ];
 
   var callicons = [
-    Icon(Icons.phone, color: Colors.green),
-    Icon(Icons.videocam, color: Colors.green),
-    Icon(Icons.videocam, color: Colors.green),
-    Icon(Icons.phone, color: Colors.green),
-    Icon(Icons.videocam, color: Colors.green),
-    Icon(Icons.phone, color: Colors.green),
-    Icon(Icons.phone, color: Colors.green),
-    Icon(Icons.phone, color: Colors.green),
-    Icon(Icons.videocam, color: Colors.green),
-    Icon(Icons.phone, color: Colors.green),
-    Icon(Icons.videocam, color: Colors.green),
-    Icon(Icons.phone, color: Colors.green),
+    Icon(Icons.phone, color: Colors.teal),
+    Icon(Icons.videocam, color: Colors.teal),
+    Icon(Icons.videocam, color: Colors.teal),
+    Icon(Icons.phone, color: Colors.teal),
+    Icon(Icons.videocam, color: Colors.teal),
+    Icon(Icons.phone, color: Colors.teal),
+    Icon(Icons.phone, color: Colors.teal),
+    Icon(Icons.phone, color: Colors.teal),
+    Icon(Icons.videocam, color: Colors.teal),
+    Icon(Icons.phone, color: Colors.teal),
+    Icon(Icons.videocam, color: Colors.teal),
+    Icon(Icons.phone, color: Colors.teal),
   ];
 
   @override
@@ -143,12 +143,12 @@ class Whatsappui_calls extends StatelessWidget {
       child: Scaffold(
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.teal,
           child: const Icon(Icons.phone_forwarded),
         ),
         appBar: AppBar(
           toolbarHeight: 100,
-          backgroundColor: Color.fromARGB(201, 10, 132, 79),
+          backgroundColor: Colors.teal,
           title: const Text(
             'WhatsApp',
           ),
