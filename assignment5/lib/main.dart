@@ -13,32 +13,32 @@ void main() {
 }
 
 var colors = [
-  Colors.blue,
+  Colors.blue[300],
   Colors.orange,
   Colors.green,
   Colors.pink,
   Colors.red,
-  Colors.purple,
-  Colors.pink,
+  Colors.blue[600],
+  Colors.purple[200],
   Colors.teal,
-  Colors.yellow,
-  Colors.orange,
-  Colors.pink,
-  Colors.green,
+  Colors.yellow[700],
+  Colors.orange[900],
+  Colors.pink[400],
+  Colors.lightGreen,
 ];
 var icons = [
   Icons.home,
-  Icons.home,
-  Icons.home,
-  Icons.home,
-  Icons.home,
-  Icons.home,
-  Icons.home,
-  Icons.home,
-  Icons.home,
-  Icons.home,
-  Icons.home,
-  Icons.home,
+  Icons.add_alert,
+  Icons.camera_alt_sharp,
+  Icons.stars_rounded,
+  Icons.wifi_off,
+  Icons.book,
+  Icons.phone,
+  Icons.mail,
+  Icons.map,
+  Icons.width_full_rounded,
+  Icons.mic_off,
+  Icons.note_add,
 ];
 
 class Grid_assignment extends StatelessWidget {
@@ -69,14 +69,17 @@ class Grid_assignment extends StatelessWidget {
                         offset: Offset(2, 2))
                   ]),
               child: ListTile(
-                title: Text('Heart'),
+                title: Text(
+                  'Heart',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
                 subtitle: Text(
                   'Shaker',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
                 leading: Icon(
                   icons[index],
-                  size: 50,
+                  size: 40,
                 ),
               ),
             ),
