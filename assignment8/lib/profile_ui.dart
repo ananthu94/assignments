@@ -40,8 +40,6 @@ class Profile extends StatelessWidget {
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: Container(
             child: Column(
-              // mainAxisAlignment: MainAxisAlignment.center,
-              // crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -68,7 +66,6 @@ class Profile extends StatelessWidget {
                         shape: BoxShape.circle,
                         image: DecorationImage(
                             fit: BoxFit.cover,
-                            // image: AssetImage('assets/images/me.jpg')
                             image: NetworkImage(
                                 'https://images.unsplash.com/photo-1684369176170-463e84248b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=484&q=80'))),
                   ),
