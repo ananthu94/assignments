@@ -87,13 +87,13 @@ class Cities_ui extends StatelessWidget {
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 25),
-                                  countries[index]),
+                                  cities[index]),
                             ),
                             subtitle: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  cities[index],
+                                  countries[index],
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 20),
