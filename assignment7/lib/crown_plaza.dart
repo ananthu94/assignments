@@ -181,9 +181,9 @@ class _Crown_plazaState extends State<Crown_plaza> {
           type: BottomNavigationBarType.shifting,
           selectedItemColor: Colors.purple,
           unselectedItemColor: Colors.grey,
-          onTap: (tapindex) {
+          onTap: (selectedindex) {
             setState(() {
-              index = tapindex;
+              index = selectedindex;
             });
           },
           currentIndex: index,
