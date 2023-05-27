@@ -6,7 +6,14 @@ void main() {
   ));
 }
 
-class Crown_plaza extends StatelessWidget {
+class Crown_plaza extends StatefulWidget {
+  @override
+  State<Crown_plaza> createState() => _Crown_plazaState();
+}
+
+int index = 0;
+
+class _Crown_plazaState extends State<Crown_plaza> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -97,7 +104,7 @@ class Crown_plaza extends StatelessWidget {
                     ],
                   ),
                   Text(
-                    '€ 200',
+                    '\$ 200',
                     style: TextStyle(
                         fontWeight: FontWeight.bold, color: Colors.purple),
                   )
@@ -164,13 +171,39 @@ class Crown_plaza extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 12,
                       )),
-                  Text('')
                 ],
               ),
             )
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.shifting,
+          selectedItemColor: Colors.purple,
+          unselectedItemColor: Colors.grey,
+          onTap: (tapindex) {
+            setState(() {
+              index = tapindex;
+            });
+          },
+          currentIndex: index,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              label: 'Search',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.favorite,
+              ),
+              label: 'Favorite',
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.settings,
+                ),
+                label: 'Settings')
+          ]),
     );
   }
 }
