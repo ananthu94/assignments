@@ -30,46 +30,52 @@ var images = [
   'assets/images/workout.jpg',
 ];
 
+//using singlescrollview and column
+
 class _Musicui_1State extends State<Musicui_1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: double.infinity,
-        decoration: BoxDecoration(color: Colors.black),
-        child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.only(left: 10, right: 10),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 20),
-                  child: Text(
-                    'Playlists',
-                    style: GoogleFonts.italiana(
-                        color: Colors.purple,
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 2),
+      body: SingleChildScrollView(
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(color: Colors.black),
+          child: SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 10, right: 10),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 20),
+                    child: Text(
+                      'Playlists',
+                      style: GoogleFonts.italiana(
+                          color: Colors.purple,
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2),
+                    ),
                   ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(30))),
-                  child: TextField(
-                    decoration: InputDecoration(
-                        hintText: 'Search...',
-                        hintStyle: TextStyle(color: Colors.purple),
-                        suffixIconColor: Colors.purple,
-                        suffixIcon: Icon(Icons.search),
-                        border: OutlineInputBorder(
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(30)))),
+                  Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(30))),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          filled: true,
+                          fillColor: Colors.white,
+                          hintText: 'Search...',
+                          hintStyle: TextStyle(color: Colors.purple),
+                          suffixIconColor: Colors.purple,
+                          suffixIcon: Icon(Icons.search),
+                          border: OutlineInputBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(30)))),
+                    ),
                   ),
-                ),
-                SingleChildScrollView(
-                  child: SliverGrid.builder(
+                  GridView.builder(
+                    shrinkWrap: true,
+                    physics: NeverScrollableScrollPhysics(),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2, childAspectRatio: 1),
                     itemBuilder: (context, index) {
@@ -83,9 +89,9 @@ class _Musicui_1State extends State<Musicui_1> {
                       );
                     },
                     itemCount: images.length,
-                  ),
-                )
-              ],
+                  )
+                ],
+              ),
             ),
           ),
         ),
