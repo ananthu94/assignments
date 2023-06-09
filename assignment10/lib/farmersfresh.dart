@@ -104,6 +104,7 @@ class _Farmers_freshState extends State<Farmers_fresh> {
           ],
           //bottom appbar
           bottom: AppBar(
+            elevation: 0,
             title: Container(
               height: 40,
               decoration: BoxDecoration(
@@ -340,13 +341,13 @@ class show_sheet extends StatelessWidget {
                         elevation: 5,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Text('Thrissur'),
+                          child: Text('Thiruvananthapuram'),
                         )),
                     Card(
                         elevation: 5,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Text('Thiruvananthapuram'),
+                          child: Text('Thrissur'),
                         ))
                   ],
                 ),
@@ -410,7 +411,7 @@ class carouselpics extends StatelessWidget {
       options: CarouselOptions(
           autoPlay: true,
           viewportFraction: 1,
-          height: 150,
+          height: 180,
           autoPlayInterval: Duration(seconds: 3)),
     );
   }
