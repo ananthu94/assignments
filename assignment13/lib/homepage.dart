@@ -60,7 +60,7 @@ class Home extends StatelessWidget {
         body: Bodydetails(),
         bottomNavigationBar: bottombar(),
         endDrawer: Theme(
-          data: Theme.of(context).copyWith(canvasColor: Colors.green),
+          data: Theme.of(context).copyWith(canvasColor: Colors.blue[300]),
           child: Drawer(
             child: Drawer_list(),
           ),
