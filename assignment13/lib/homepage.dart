@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:assignment13/datas.dart';
-import 'package:assignment13/detailedpage.dart';
+// import 'package:assignment13/detailedpage.dart';
 
-void main() {
-  runApp(
-    MaterialApp(home: Home(), routes: {
-      'detailedpage': (context) => Detailedpage(),
-      'homepage': (context) => Home(),
-    }), // Wrap your app
-  );
-}
+// void main() {
+//   runApp(
+//     MaterialApp(home: Home(), routes: {
+//       'detailedpage': (context) => Detailedpage(),
+//       'homepage': (context) => Home(),
+//     }), // Wrap your app
+//   );
+// }
 
 class Home extends StatelessWidget {
   final data = details..map((data) => data);
