@@ -3,14 +3,20 @@ import 'package:flutter/foundation.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:device_preview/device_preview.dart';
 
+// void main() {
+//   runApp(
+//     DevicePreview(
+//       enabled: !kReleaseMode,
+//       builder: (context) =>
+//           MaterialApp(useInheritedMediaQuery: true, home: Musicui_2()),
+//     ),
+//   );
+// }
+
 void main() {
-  runApp(
-    DevicePreview(
-      enabled: !kReleaseMode,
-      builder: (context) =>
-          MaterialApp(useInheritedMediaQuery: true, home: Musicui_2()),
-    ),
-  );
+  runApp(MaterialApp(
+    home: Musicui_2(),
+  ));
 }
 
 class Musicui_2 extends StatefulWidget {
@@ -102,6 +108,7 @@ class _Musicui_2State extends State<Musicui_2> {
                   width: double.infinity,
                   height: MediaQuery.of(context).size.height * .22,
                   child: GridView.builder(
+                    itemCount: detailedlist[0].length,
                     scrollDirection: Axis.horizontal,
                     physics: AlwaysScrollableScrollPhysics(),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
