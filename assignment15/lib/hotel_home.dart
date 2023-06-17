@@ -31,12 +31,26 @@ class Hotel_home extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 10, right: 10),
                 child: Column(
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [Icon(Icons.menu), Icon(Icons.favorite_border)],
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Icon(Icons.menu),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 5),
+                            child: Text(
+                              'Booking',
+                              style: TextStyle(
+                                  fontSize: 25, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          Icon(Icons.favorite_border)
+                        ],
+                      ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 20, bottom: 22),
+                      padding: const EdgeInsets.only(top: 18, bottom: 8),
                       child: Text(
                         'Type Your Location',
                         style: TextStyle(fontSize: 20),
