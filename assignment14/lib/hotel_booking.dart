@@ -188,88 +188,101 @@ class _Hotel_bookingState extends State<Hotel_booking> {
                     )
                   ],
                 ),
-                Container(
-                  decoration:
-                      BoxDecoration(borderRadius: BorderRadius.circular(15)),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 10),
                   child: ListView.builder(
                     itemCount: 4,
                     scrollDirection: Axis.vertical,
                     shrinkWrap: true,
                     physics: ScrollPhysics(),
                     itemBuilder: (context, index) {
-                      return Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          SizedBox(
-                              height: 100,
-                              width: 100,
-                              child: ClipRRect(
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              color: Colors.grey[300]),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              SizedBox(
+                                  height: 100,
+                                  width: 120,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(15),
+                                        bottomLeft: Radius.circular(15)),
+                                    child: Image.network(
+                                      details[0][index],
+                                      fit: BoxFit.cover,
+                                    ),
+                                  )),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    details[1][index],
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(
+                                    height: 5,
+                                  ),
+                                  Text(
+                                    'A 5Star Hotel in Kochi ',
+                                    style: TextStyle(color: Colors.black45),
+                                  ),
+                                  SizedBox(
+                                    height: 5,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        '\$180 / night',
+                                        style: TextStyle(
+                                            color: Colors.purple, fontSize: 15),
+                                      ),
+                                      SizedBox(
+                                        width: 35,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 2),
+                                        child: Text(
+                                          '5',
+                                          style: TextStyle(
+                                              color: Colors.purple,
+                                              fontSize: 15),
+                                        ),
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        size: 15,
+                                        color: Colors.purple,
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              ClipRRect(
                                   borderRadius: BorderRadius.only(
                                       topLeft: Radius.circular(15),
                                       bottomLeft: Radius.circular(15)),
-                                  child: Image.network(details[0][index]))),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                details[1][index],
-                                style: TextStyle(
-                                    fontSize: 15, fontWeight: FontWeight.bold),
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Text(
-                                'A 5Star Hotel in Kochi ',
-                                style: TextStyle(color: Colors.black45),
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Row(
-                                children: [
-                                  Text(
-                                    '\$180 / night',
-                                    style: TextStyle(
-                                        color: Colors.purple, fontSize: 15),
-                                  ),
-                                  SizedBox(
-                                    width: 50,
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(top: 2),
-                                    child: Text(
-                                      '5',
-                                      style: TextStyle(
-                                          color: Colors.purple, fontSize: 15),
-                                    ),
-                                  ),
-                                  Icon(
-                                    Icons.star,
-                                    size: 15,
-                                    color: Colors.purple,
-                                  )
-                                ],
-                              ),
+                                  child: ElevatedButton(
+                                      onPressed: () {},
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(
+                                          top: 15,
+                                          bottom: 10,
+                                        ),
+                                        child: Text(
+                                          'Book',
+                                          style: TextStyle(fontSize: 16),
+                                        ),
+                                      )))
                             ],
                           ),
-                          ClipRRect(
-                              borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(15),
-                                  bottomLeft: Radius.circular(15)),
-                              child: ElevatedButton(
-                                  onPressed: () {},
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(
-                                      top: 15,
-                                      bottom: 10,
-                                    ),
-                                    child: Text(
-                                      'Book',
-                                      style: TextStyle(fontSize: 16),
-                                    ),
-                                  )))
-                        ],
+                        ),
                       );
                     },
                   ),
