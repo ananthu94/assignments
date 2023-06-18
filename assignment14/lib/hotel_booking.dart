@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(
@@ -261,6 +262,35 @@ class _Hotel_bookingState extends State<Hotel_booking> {
                                         color: Colors.purple,
                                       )
                                     ],
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5),
+                                    child: Row(
+                                      children: [
+                                        Icon(
+                                          FontAwesomeIcons.car,
+                                          color: Colors.blue,
+                                          size: 15,
+                                        ),
+                                        SizedBox(
+                                          width: 15,
+                                        ),
+                                        Icon(FontAwesomeIcons.swimmingPool,
+                                            color: Colors.blue, size: 18),
+                                        SizedBox(
+                                          width: 15,
+                                        ),
+                                        Icon(
+                                            FontAwesomeIcons.martiniGlassCitrus,
+                                            color: Colors.blue,
+                                            size: 18),
+                                        SizedBox(
+                                          width: 15,
+                                        ),
+                                        Icon(Icons.wifi,
+                                            color: Colors.blue, size: 18),
+                                      ],
+                                    ),
                                   ),
                                 ],
                               ),
